@@ -29,12 +29,12 @@ void decode(const char* str, int length, const char* encodiongTable, char* newSt
 int main(void) {
 	int length = strlen(entered_PW);
 	while (1) {
-		printf("ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä(¼ıÀÚ¿Í ¾ËÆÄºªÀ» È¥ÇÕÇÏ¿© 8-12ÀÚ):");
+		printf("íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”(ìˆ«ìì™€ ì•ŒíŒŒë²³ì„ í˜¼í•©í•˜ì—¬ 8-12ì):");
 		fgets(entered_PW, sizeof(entered_PW), stdin);
 		if (checkCondiotion(str, length) == 1) {
 			printf("%s\n", entered_PW);
 			printf("%d\n", length);
-			printf("¹üÀ§ ³»ÀÇ ¹®ÀÚ ¼ö·Î ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.:\n");
+			printf("ë²”ìœ„ ë‚´ì˜ ë¬¸ì ìˆ˜ë¡œ ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.:\n");
 		}
 		else {
 			break;
