@@ -28,14 +28,15 @@ def update_telnum(name , tel):
 
 def print_telnum():
     for i in range(0, len(name_list)):
-        print("이름:", name_list)
-        print("전화번호.:" , tel_list)
+        print("이름:", name_list[i])
+        print("전화번호.:" , tel_list[i])
 
 def delete_telnum(name):
+    
     for i in range(0, len(name_list)):
         if name_list[i] == name:
-            del(name_list)
-            del(tel_list)
+            del(name_list[i])
+            del(tel_list[i])
             return True
     return False
 
